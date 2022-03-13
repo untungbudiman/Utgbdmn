@@ -1,0 +1,718 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction:column;
+    background: #121212;
+}
+h1 {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+    margin:  0;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.h {
+    text-shadow: 0 0 5px white,
+                 0 0 10px white,
+                0 0 15px white,
+                0 0 20px white;
+}
+h5 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 30px;
+    margin: 5px 0;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    text-shadow: 0 0 5px white,
+                 0 0 10px white,
+                0 0 15px white,
+                0 0 20px white;
+}
+.text {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.whatsapp
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #25d366;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.whatsapp:hover {
+    background: #25d366;
+    color: #050801;
+    box-shadow: 0 0 5px #25d366,
+                0 0 25px#25d366,
+                0 0 50px #25d366,
+                0 0 200px #25d366;
+}
+.instagram
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #fb3958;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.instagram:hover {
+    background: #fb3958;
+    color: #050801;
+    box-shadow: 0 0 5px #fb3958,
+                0 0 25px #fb3958,
+                0 0 50px #fb3958,
+                0 0 200px #fb3958;
+}
+.twitter
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #00acee;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.twitter:hover {
+    background: #00acee;
+    color: #050801;
+    box-shadow: 0 0 5px #00acee,
+                0 0 25px #00acee,
+                0 0 50px #00acee,
+                0 0 200px #00acee;
+}
+.facebook
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #4267b2;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.facebook:hover {
+    background: #4267b2;
+    color: #050801;
+    box-shadow: 0 0 5px #4267b2,
+                0 0 25px #4267b2,
+                0 0 50px #4267b2,
+                0 0 200px #4267b2;
+}
+.telegram
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #229ed9;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.telegram:hover {
+    background: #229ed9;
+    color: #050801;
+    box-shadow: 0 0 5px #229ed9,
+                0 0 25px #229ed9,
+                0 0 50px #229ed9,
+                0 0 200px #229ed9;
+}
+.zenly
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #deeb34;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.zenly:hover {
+    background: #deeb34;
+    color: #050801;
+    box-shadow: 0 0 5px #deeb34,
+                0 0 25px #deeb34,
+                0 0 50px #deeb34,
+                0 0 200px #deeb34;
+}
+.whatsapp span
+{
+    position: absolute;
+    display: block;
+}
+.whatsapp span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#25d366);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+.whatsapp span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#25d366);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+.whatsapp span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#25d366);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+.whatsapp span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#25d366);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
+.instagram span
+{
+    position: absolute;
+    display: block;
+}
+.instagram span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#fb3958);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+.instagram span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#fb3958);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+.instagram span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#fb3958);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+.instagram span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#fb3958);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
+.twitter span
+{
+    position: absolute;
+    display: block;
+}
+.twitter span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#00acee);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+.twitter span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#00acee);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+.twitter span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#00acee);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+.twitter span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#00acee);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
+.facebook span
+{
+    position: absolute;
+    display: block;
+}
+.facebook span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#4267b2);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+.facebook span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#4267b2);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+.facebook span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#4267b2);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+.facebook span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#4267b2);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
+.telegram span
+{
+    position: absolute;
+    display: block;
+}
+.telegram span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#229ed9);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+.telegram span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#229ed9);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+.telegram span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#229ed9);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+.telegram span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#229ed9);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
+.zenly span
+{
+    position: absolute;
+    display: block;
+}
+.zenly span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#deeb34);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+.zenly span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#deeb34);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+.zenly span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#deeb34);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+.zenly span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#deeb34);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
